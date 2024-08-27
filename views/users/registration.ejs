@@ -1,0 +1,56 @@
+<%- include('../layouts/header.ejs') %>
+
+<div class="container">
+    <div class="screen">
+        <div class="screen__content">
+            <form class="login" action="/home" method="post">
+                <div class="login__field">
+                    <i class="login__icon fas fa-user"></i>
+                    <input type="text" class="login__input" name="name" placeholder="User name / Email">
+                </div>
+                <div class="login__field">
+                    <i class="login__icon fas fa-lock"></i>
+                    <input type="password" class="login__input" name="password" placeholder="Password">
+                </div>
+                <button class="button login__submit" value="Register">
+                    <span class="button__text">Log In Now</span>
+                    <i class="button__icon fas fa-chevron-right"></i>
+                </button>				
+            </form>
+            <div class="social-login">
+                 <a href="" type="text">Sign Up</a>
+                <div class="social-icons">
+                    <a href="#" class="social-login__icon fab fa-instagram"></a>
+                    <a href="#" class="social-login__icon fab fa-facebook"></a>
+                    <a href="#" class="social-login__icon fab fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="screen__background">
+            <span class="screen__background__shape screen__background__shape4"></span>
+            <span class="screen__background__shape screen__background__shape3"></span>		
+            <span class="screen__background__shape screen__background__shape2"></span>
+            <span class="screen__background__shape screen__background__shape1"></span>
+        </div>		
+    </div>
+</div>
+
+<div class="login-page">
+    <div class="form">
+      <form class="register-form" action="/home" method="post">
+        <input type="text" name="name" placeholder="name"/>
+        <input type="password" name="password" placeholder="password"/>
+        <input type="text" name="email" placeholder="email address"/>
+        <button value="Register">create</button>
+        <p class="message">Already registered? <a href="#">Sign In</a></p>
+      </form>
+      <form class="login-form">
+        <input type="text" placeholder="username"/>
+        <input type="password" placeholder="password"/>
+        <button>login</button>
+        <p class="message">Not registered? <a href="#">Create an account</a></p>
+      </form>
+    </div>
+  </div>
+
+<%- include('../layouts/footer.ejs') %>
